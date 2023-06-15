@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 from django.conf.urls import include
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path("", include("index.urls")),
     path("admin/", admin.site.urls),
     path("blog/", include("blog.urls")),
     path('projects/', include('projects.urls')),
