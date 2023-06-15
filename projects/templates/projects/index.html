@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Basav Bamrah">
+    <meta name="author" content="Devcrud">
+    <title>Projects</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#"></a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="/#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="/#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="/projects">Projects</a>
+                </li>
+
+                <li class="item">
+                    <a class="link" href="/">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="/#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <!-- <a href="components.html" class="btn btn-primary">Components</a> -->
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <header class="header" id="proj">
+        <div class="overlay"></div>
+        <div class="wrapper">
+            <img src="{% static 'assets/imgs/my_proj.gif' %}" alt="my project">
+        </div>
+    </header>
+
+    <div align="center">
+        <section class="section-sm bg-primary" id="contact">
+            <!-- container -->
+            <div class="container text-center text-sm-left">
+                <!-- row -->
+                <div class="row align-items-center">
+                    <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                        <h6 class="title text-light">Want to work with me?</h6>
+                        <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                    </div>
+                    
+                    <div class="col-sm offset-sm-2 offset-md-3">
+                        <!-- <button class="btn btn-primary rounded" onclick="window.location.href='projects'">View All Projects</button> -->
+                        <button class="btn btn-lg my-font btn-light rounded" onclick="window.location.href='/#contact'" >Hire Me</button>
+                    </div>
+
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </section> <!-- end of section -->
+        <section class="section" id="portfolio">
+            <div class="container text-center">
+                <p class="section-subtitle">What I Did ?</p>
+                <h6 class="section-title mb-6">Projects</h6>
+                <!-- row -->
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/image-forgery-detection" class="portfolio-card">
+                            <img src="{% static 'assets/imgs/Image_forg.png' %}" style="border-radius: 5%;" class="portfolio-card-img" alt="">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption" hre>
+                                    <h4>Deep Learning</h5>
+                                        <p class="font-weight-normal">Image Forgery Detection
+                                            <br>Detecting image forgery using CNN, implemented using Keras and Tensorflow in python, streamlit as frontend.
+                                        </p>
+
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/image-caption-generator" class="portfolio-card">
+                            <img src="{% static 'assets/imgs/imgCap.png' %}" style="border-radius: 5%;" class="portfolio-card-img" alt="">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption" hre>
+                                    <h4>Deep Learning</h5>
+                                        <p class="font-weight-normal">Image caption generator hybrid model
+                                            <br>(CNN + LSTM)
+                                            <br> Implemented using Keras and Tensorflow in python, django as backend,
+                                            HTML,
+                                            CSS, JS as frontend.
+                                        </p>
+
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/sign-language-detection" class="portfolio-card">
+                            <img class="portfolio-card-img" src="{% static 'assets/imgs/sign language detection.png' %}" style="border-radius: 5%;"
+                                class="img-responsive rounded" alt="">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>Deep Learning</h5>
+                                        <p class="font-weight-normal">Sign language Detection system
+                                            <br> Implemented using Keras and Tensorflow, Convolutional Neural Network,
+                                            OpenCV in python.
+                                        </p>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- end of row 1-->
+
+                <!-- start of row 2 -->
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/movie-recommendation-system" class="portfolio-card">
+                            <img class="portfolio-card-img"
+                                src="{% static 'assets/imgs/Movie Recommendation System.png' %}" style="border-radius: 5%;"
+                                class="img-responsive rounded" alt="">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>Recommendatiom System</h5>
+                                        <p class="font-weight-normal">
+                                            Movie recommendation system using collaborative filtering, content based
+                                            filtering, hybrid model.
+                                            <br> Implemented using python, pandas, numpy, sklearn, matplotlib, seaborn,
+                                            streamlit.
+                                        </p>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/Churn-model" class="portfolio-card">
+                            <img class="portfolio-card-img" src="{% static 'assets/imgs/Churn.png' %}" style="border-radius: 5%;"
+                                class="img-responsive rounded" alt="">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>Machine Learning</h5>
+                                        <p class="font-weight-normal">Churn Prediction Model
+                                            <br> Predicting churn rate of customers using Logistic Regression, Decision Tree. A Machine Learning model implemented using python, pandas, numpy, sklearn, matplotlib, seaborn.
+                                        </p>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/Titanic-Disaster-Survival-Prediction"  class="portfolio-card" >
+                            <img class="portfolio-card-img"
+                                src="{% static 'assets/imgs/titanic.jpg' %}"
+                                class="img-responsive rounded" alt= 'titanic' style="border-radius: 5%;">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>Titanic Disaster Survival Prediction </h5>
+                                        <p class="font-weight-normal">
+                                            Predicting survival of passengers using Logistic Regression, Decision Tree, Random Forest. A Machine Learning model implemented using python, pandas, numpy, sklearn, matplotlib, seaborn.
+                                        </p>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div><!-- end of row -->
+
+
+                <div class="row">
+                
+                    <div class="col-md-4">
+                        <a href="https://github.com/basavbamrah/movie-recommendation-system" class="portfolio-card">
+                            <img class="portfolio-card-img" src="{% static 'assets/imgs/arduino_proj.png' %}"
+                                class="img-responsive rounded" alt="" style="border-radius: 5%;">
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>Recommendatiom System</h5>
+                                        <p class="font-weight-normal">
+                                            Movie recommendation system using collaborative filtering, content based
+                                            filtering, hybrid model.
+                                            <br> Implemented using python, pandas, numpy, sklearn, matplotlib, seaborn,
+                                            streamlit.
+                                        </p>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <br><br>
+                <button type="button" class="btn btn-outline-primary"
+                    onclick="window.location.href='https://github.com/basavbamrah?tab=repositories';">View More</button>
+            </div><!-- end of container -->
+        </section> <!-- end of portfolio section -->
+    </div>
+
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">
+                <!-- <script>document.write(new Date().getFullYear())</script> &copy; <a -->
+                <!-- href="http://www.devcrud.com">DevCRUD</a> Distribution <a -->
+                <!-- href="https://themewagon.com">ThemeWagon</a> -->
+            <div class="social-links text-right m-auto ml-sm-auto">
+                </p>
+                    <a href="https://www.linkedin.com/in/basav-bamrah" class="link"><i class="ti-linkedin"></i></a>
+                    <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                    <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js'%} "></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{% static 'assets/js/meyawo.js' %}"></script>
+</body>
+
+</html>
