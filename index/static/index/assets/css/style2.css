@@ -1585,6 +1585,12 @@ pre code {
 }
 
 @media (min-width: 992px) {
+    
+    .col{
+        margin-left: 0px;
+        flex-wrap: wrap;
+        width: 60%;
+    }
     .col-lg {
         -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
