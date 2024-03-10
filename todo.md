@@ -4,6 +4,7 @@
     - use Firebase for logging, and storage of contact mails
     - Response to contact form
     - Frontend deployment
+2. add clanderly link
 
 2. Flask
     - Try to use flask instead of django
